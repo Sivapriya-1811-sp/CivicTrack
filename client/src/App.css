@@ -1,0 +1,509 @@
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.home-page {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  color: #172554;
+  background: #f5f8ff;
+  min-height: 100vh;
+}
+
+.home-navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 6%;
+  background: #0b1f46;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+.home-logo {
+  text-decoration: none;
+  font-size: 28px;
+  font-weight: 800;
+  color: white;
+}
+
+.home-logo span {
+  color: #38bdf8;
+}
+
+.home-nav-links {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+
+.home-nav-links a {
+  text-decoration: none;
+  color: #e2e8f0;
+  font-weight: 500;
+}
+
+.home-nav-links a:hover {
+  color: #38bdf8;
+}
+
+.home-nav-actions {
+  display: flex;
+  gap: 12px;
+}
+
+.home-login-btn,
+.home-register-btn {
+  padding: 11px 22px;
+  border-radius: 9px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.home-login-btn {
+  color: white;
+  border: 1px solid #94a3b8;
+}
+
+.home-register-btn {
+  color: white;
+  background: #087cff;
+}
+
+.home-hero {
+  min-height: 470px;
+  padding: 70px 7%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+  background: linear-gradient(135deg, #102b60, #0759a8);
+  color: white;
+}
+
+.home-hero-content {
+  max-width: 650px;
+}
+
+.home-tagline,
+.home-section-label {
+  font-size: 13px;
+  letter-spacing: 2px;
+  font-weight: 700;
+  color: #0284c7;
+}
+
+.home-tagline {
+  color: #7dd3fc;
+}
+
+.home-hero h1 {
+  font-size: clamp(48px, 7vw, 78px);
+  margin: 15px 0 5px;
+  line-height: 1.1;
+}
+
+.home-hero h1 span {
+  color: #38bdf8;
+}
+
+.home-hero h2 {
+  font-size: 30px;
+  margin: 10px 0 18px;
+}
+
+.home-hero p {
+  font-size: 18px;
+  line-height: 1.8;
+  color: #dbeafe;
+  max-width: 550px;
+}
+
+.home-hero-buttons {
+  display: flex;
+  gap: 15px;
+  margin-top: 30px;
+  flex-wrap: wrap;
+}
+
+.home-primary-btn,
+.home-secondary-btn {
+  display: inline-block;
+  padding: 14px 26px;
+  border-radius: 10px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: 0.2s;
+}
+
+.home-primary-btn {
+  background: #087cff;
+  color: white;
+}
+
+.home-primary-btn:hover {
+  background: #0064d9;
+  transform: translateY(-2px);
+}
+
+.home-secondary-btn {
+  color: white;
+  border: 1px solid #bfdbfe;
+}
+
+.home-hero-visual {
+  width: 300px;
+  height: 300px;
+  flex-shrink: 0;
+  border-radius: 35px;
+  background: rgba(255, 255, 255, 0.09);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.home-city-icon {
+  font-size: 110px;
+}
+
+.home-city-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.home-city-text strong {
+  font-size: 25px;
+}
+
+.home-city-text span {
+  color: #bfdbfe;
+  text-align: center;
+}
+
+.home-about,
+.home-features {
+  padding: 70px 7%;
+  text-align: center;
+}
+
+.home-about h2,
+.home-features h2,
+.home-cta h2 {
+  font-size: 32px;
+  margin: 15px 0;
+}
+
+.home-about p {
+  max-width: 800px;
+  margin: 0 auto;
+  color: #64748b;
+  line-height: 1.8;
+  font-size: 17px;
+}
+
+.home-feature-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 22px;
+  margin-top: 40px;
+}
+
+.home-feature-card {
+  background: white;
+  padding: 30px 22px;
+  border-radius: 16px;
+  box-shadow: 0 5px 22px rgba(15, 23, 42, 0.06);
+  border: 1px solid #e2e8f0;
+  transition: 0.2s;
+}
+
+.home-feature-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 28px rgba(15, 23, 42, 0.1);
+}
+
+.home-feature-icon {
+  font-size: 42px;
+  margin-bottom: 15px;
+}
+
+.home-feature-card h3 {
+  font-size: 19px;
+  margin: 10px 0;
+}
+
+.home-feature-card p {
+  color: #64748b;
+  line-height: 1.6;
+}
+
+.home-cta {
+  text-align: center;
+  padding: 65px 20px;
+  background: #e8f2ff;
+}
+
+.home-cta p {
+  color: #64748b;
+  margin-bottom: 25px;
+}
+
+.home-footer {
+  background: #0b1f46;
+  color: #cbd5e1;
+  text-align: center;
+  padding: 35px 20px;
+}
+
+.home-footer p {
+  margin: 12px 0;
+}
+
+.home-footer span {
+  font-size: 13px;
+  color: #94a3b8;
+}
+
+@media (max-width: 900px) {
+  .home-hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .home-hero-buttons {
+    justify-content: center;
+  }
+
+  .home-feature-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .home-nav-links {
+    order: 3;
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 550px) {
+  .home-navbar {
+    justify-content: center;
+  }
+
+  .home-feature-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .home-hero-visual {
+    width: 230px;
+    height: 230px;
+  }
+
+  .home-city-icon {
+    font-size: 75px;
+  }
+
+  .home-hero h2 {
+    font-size: 24px;
+  }
+
+  .home-about h2,
+  .home-features h2,
+  .home-cta h2 {
+    font-size: 26px;
+  }
+}
+
+/* ==============================
+   CIVICTRACK HOMEPAGE
+============================== */
+
+.home-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(135deg, #f0f5ff, #ffffff, #e8f4ff);
+  font-family: Arial, sans-serif;
+  color: #172554;
+}
+
+/* Navbar */
+
+.home-navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 22px 8%;
+  background: #ffffff;
+  box-shadow: 0 2px 12px rgba(15, 23, 42, 0.06);
+}
+
+.home-logo {
+  font-size: 26px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #1e3a8a;
+}
+
+.home-logo span {
+  color: #2563eb;
+}
+
+.home-community-link {
+  text-decoration: none;
+  color: #1e40af;
+  font-weight: 600;
+  padding: 10px 18px;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.home-community-link:hover {
+  background: #eff6ff;
+}
+
+/* Main Content */
+
+.home-role-main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.home-tagline {
+  color: #2563eb;
+  font-size: 13px;
+  font-weight: bold;
+  letter-spacing: 3px;
+  margin-bottom: 15px;
+}
+
+.home-role-main h1 {
+  font-size: 42px;
+  margin: 0 0 12px;
+  color: #172554;
+}
+
+.home-subtitle {
+  color: #64748b;
+  font-size: 17px;
+  margin-bottom: 40px;
+}
+
+/* Role Cards */
+
+.home-role-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(250px, 1fr));
+  gap: 28px;
+  width: 100%;
+  max-width: 850px;
+}
+
+.home-role-card {
+  text-decoration: none;
+  background: #ffffff;
+  padding: 38px 30px;
+  border-radius: 18px;
+  border: 1px solid #dbeafe;
+  box-shadow: 0 8px 25px rgba(30, 64, 175, 0.08);
+  transition: transform 0.3s, box-shadow 0.3s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.home-role-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 16px 35px rgba(30, 64, 175, 0.16);
+}
+
+.home-role-icon {
+  width: 75px;
+  height: 75px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #eff6ff;
+  border-radius: 50%;
+  font-size: 35px;
+  margin-bottom: 20px;
+}
+
+.home-role-card h2 {
+  font-size: 25px;
+  color: #1e3a8a;
+  margin: 0 0 15px;
+}
+
+.home-role-card p {
+  color: #64748b;
+  font-size: 15px;
+  line-height: 1.7;
+  margin: 0 0 25px;
+}
+
+.home-role-action {
+  color: #2563eb;
+  font-weight: bold;
+  font-size: 15px;
+  margin-top: auto;
+}
+
+/* Registration Note */
+
+.home-role-note {
+  margin-top: 35px;
+  color: #64748b;
+  font-size: 14px;
+}
+
+/* Footer */
+
+.home-footer {
+  text-align: center;
+  padding: 22px;
+  background: #ffffff;
+  color: #64748b;
+  font-size: 13px;
+  border-top: 1px solid #e2e8f0;
+}
+
+/* Responsive Design */
+
+@media (max-width: 650px) {
+  .home-role-grid {
+    grid-template-columns: 1fr;
+    max-width: 400px;
+  }
+
+  .home-role-main h1 {
+    font-size: 30px;
+  }
+
+  .home-role-main {
+    padding: 45px 18px;
+  }
+
+  .home-navbar {
+    padding: 18px 5%;
+  }
+
+  .home-logo {
+    font-size: 22px;
+  }
+}

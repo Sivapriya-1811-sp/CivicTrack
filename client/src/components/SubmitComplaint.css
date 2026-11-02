@@ -1,0 +1,254 @@
+
+.submit-page {
+  min-height: 100vh;
+  background: #f4f7fb;
+  padding: 40px 20px;
+  font-family: Arial, sans-serif;
+  color: #1b2d42;
+}
+
+.submit-container {
+  max-width: 850px;
+  margin: 0 auto;
+}
+
+.back-link {
+  display: inline-block;
+  color: #07888a;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 14px;
+  margin-bottom: 30px;
+}
+
+.back-link:hover {
+  text-decoration: underline;
+}
+
+.submit-heading {
+  margin-bottom: 28px;
+}
+
+.submit-eyebrow {
+  color: #07888a;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+}
+
+.submit-heading h1 {
+  font-size: 32px;
+  margin: 12px 0;
+  color: #142f47;
+}
+
+.submit-heading > p:last-child {
+  color: #718096;
+  line-height: 1.7;
+  font-size: 14px;
+  max-width: 650px;
+}
+
+.complaint-form {
+  background: white;
+  padding: 35px;
+  border-radius: 14px;
+  border: 1px solid #e5ebf1;
+  box-shadow: 0 5px 25px rgba(20, 47, 71, 0.06);
+}
+
+.complaint-form h2 {
+  margin: 0 0 8px;
+  font-size: 21px;
+  color: #142f47;
+}
+
+.form-description {
+  color: #8290a2;
+  font-size: 13px;
+  margin-bottom: 28px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 23px;
+}
+
+.form-group label {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #34465a;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 13px 14px;
+  border: 1px solid #dce3eb;
+  border-radius: 8px;
+  font-size: 14px;
+  font-family: inherit;
+  color: #26384b;
+  background: #fff;
+  outline: none;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  border-color: #07888a;
+  box-shadow: 0 0 0 3px rgba(7, 136, 138, 0.1);
+}
+
+.form-group textarea {
+  resize: vertical;
+  line-height: 1.6;
+}
+
+.form-group input[type="file"] {
+  padding: 12px;
+  background: #f8fafc;
+  cursor: pointer;
+}
+
+.form-group small {
+  color: #8290a2;
+  font-size: 12px;
+  margin-top: 8px;
+}
+
+.form-error {
+  padding: 13px;
+  margin-bottom: 22px;
+  border-radius: 8px;
+  background: #fff0f0;
+  color: #c0392b;
+  border: 1px solid #ffd6d6;
+  font-size: 13px;
+}
+
+.image-preview {
+  margin: 10px 0 25px;
+  padding: 16px;
+  border: 1px solid #e5ebf1;
+  border-radius: 9px;
+  background: #f8fafc;
+}
+
+.image-preview p {
+  font-weight: bold;
+  font-size: 13px;
+  margin-top: 0;
+}
+
+.image-preview img {
+  display: block;
+  width: 100%;
+  max-width: 300px;
+  max-height: 220px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 12px;
+}
+
+.image-preview button {
+  border: none;
+  background: transparent;
+  color: #c0392b;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 5px 0;
+}
+
+.submit-complaint-button {
+  width: 100%;
+  padding: 15px;
+  background: #07888a;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.submit-complaint-button:hover {
+  background: #066d70;
+}
+
+.submit-complaint-button:disabled {
+  opacity: 0.65;
+  cursor: not-allowed;
+}
+
+@media (max-width: 600px) {
+  .submit-page {
+    padding: 25px 14px;
+  }
+
+  .submit-heading h1 {
+    font-size: 26px;
+  }
+
+  .complaint-form {
+    padding: 22px 17px;
+  }
+}
+
+/* Complaint Submission Success Message */
+
+.complaint-success-message {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  margin-top: 20px;
+  padding: 16px 20px;
+  background: #dcfce7;
+  border: 1px solid #86efac;
+  border-left: 5px solid #16a34a;
+  border-radius: 10px;
+  color: #166534;
+  animation: successFadeIn 0.4s ease;
+}
+
+.success-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: #16a34a;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.complaint-success-message strong {
+  display: block;
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.complaint-success-message p {
+  margin: 0;
+  font-size: 14px;
+  color: #166534;
+}
+
+@keyframes successFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
