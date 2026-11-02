@@ -1,5 +1,5 @@
 const express = require('express');
-const bodyParser = require('body-parser');
+
 const mongoose = require('mongoose');
 const path = require('path');
 const routes = require('./routes/api');
@@ -26,8 +26,7 @@ app.use((req, res, next) => {
     res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept');
     next();
 });
-
-app.use(bodyParser.json());
+app.use(express.json());
 
 app.use('/api', routes);
 app.use('/api/auth', authRoutes);
